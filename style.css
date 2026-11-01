@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #100d1d;
+  --panel: #19152a;
+  --text: #f8f5ff;
+  --muted: #aaa3bd;
+  --pink: #f58acb;
+  --violet: #a994ff;
+  --line: rgba(255,255,255,.1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+
+.site-header {
+  min-height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: rgba(16,13,29,.92);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(18px);
+}
+.logo {
+  font: 700 17px 'Space Grotesk', sans-serif;
+  letter-spacing: 1.4px;
+}
+.logo span { color: var(--pink); }
+nav { display: flex; gap: 30px; color: #c4bed2; font-size: 13px; }
+nav a:hover { color: var(--pink); }
+
+.hero {
+  min-height: 550px;
+  padding: 110px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 80% 45%, rgba(119,81,190,.25), transparent 40%),
+    linear-gradient(120deg,#151126,#100d1d);
+}
+.hero > p:first-child {
+  color: #c9a9f9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+h1, h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+h1 { font-size: clamp(45px,6vw,75px); margin: 15px 0; }
+h1 em, h2 em { color: var(--pink); font-style: normal; }
+.hero p { color: var(--muted); max-width: 480px; }
+.primary-button {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  background: linear-gradient(110deg,#d978bd,#9279ed);
+  font-size: 13px;
+  font-weight: 800;
+  transition: transform .2s;
+}
+.primary-button:hover { transform: translateY(-3px); }
+
+.section { padding: 85px 7%; }
+#anime { background: #131021; }
+h2 { font-size: clamp(34px,4vw,48px); margin: 0 0 12px; }
+.description { color: var(--muted); font-size: 13px; margin-bottom: 35px; }
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 24px 17px;
+}
+.anime-card { min-width: 0; transition: transform .25s; }
+.anime-card:hover { transform: translateY(-6px); }
+.poster {
+  height: 245px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  font: 700 25px/1.05 'Space Grotesk',sans-serif;
+  letter-spacing: -1px;
+  text-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+.poster:after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 50%;
+  right: -90px;
+  bottom: -90px;
+  box-shadow: 0 0 0 20px rgba(255,255,255,.035);
+}
+.anime-card h3 { font-size: 12px; margin: 12px 2px 3px; }
+.anime-card p { font-size: 10px; color: #918aa4; margin: 0 2px; }
+
+.poster-mha { background: linear-gradient(145deg,#1a8b88,#182c52,#121327); }
+.poster-jjk { background: linear-gradient(145deg,#6d347d,#242044,#11101f); }
+.poster-kny { background: linear-gradient(145deg,#c85d4f,#54304e,#20172d); }
+.poster-one { background: linear-gradient(145deg,#d18a48,#8b3e46,#29203c); }
+.poster-naruto { background: linear-gradient(145deg,#e68b3e,#9a443f,#322044); }
+.poster-spy { background: linear-gradient(145deg,#b84f6d,#4c3c70,#17162c); }
+.poster-bleach { background: linear-gradient(145deg,#e6e4df,#64657e,#202034); color: #19172a; }
+.poster-black { background: linear-gradient(145deg,#497a58,#263c48,#171a2a); }
+.poster-hxh { background: linear-gradient(145deg,#6ba2a1,#385b76,#22233d); }
+.poster-tokyo { background: linear-gradient(145deg,#b75b50,#573344,#20182b); }
+.poster-chain { background: linear-gradient(145deg,#d17b53,#763c51,#21162c); }
+.poster-death { background: linear-gradient(145deg,#343342,#181727,#080811); }
+.poster-blue { background: linear-gradient(145deg,#2584c2,#16416f,#141b3b); }
+.poster-haikyuu { background: linear-gradient(145deg,#e6a34e,#b9573c,#29213a); }
+.poster-solo { background: linear-gradient(145deg,#4c64a7,#25294f,#111222); }
+.poster-drstone { background: linear-gradient(145deg,#5f9a83,#42645d,#1c2731); }
+.poster-fairy { background: linear-gradient(145deg,#a66bb4,#654b8d,#241c3b); }
+.poster-frieren { background: linear-gradient(145deg,#9e9dd1,#64769d,#2a2a49); }
+.poster-wind { background: linear-gradient(145deg,#55a69c,#3a6377,#1d253a); }
+.poster-mob { background: linear-gradient(145deg,#d5a3d1,#8269a5,#302548); }
+.poster-fullmetal { background: linear-gradient(145deg,#b58c58,#66513f,#262035); }
+.poster-jojo { background: linear-gradient(145deg,#ad668f,#634477,#211b39); }
+.poster-rezero { background: linear-gradient(145deg,#5e8eae,#4c527d,#25203f); }
+.poster-assass { background: linear-gradient(145deg,#c3c16a,#6e8c63,#273c3b); }
+.poster-promised { background: linear-gradient(145deg,#d5a36b,#866e70,#353047); }
+.poster-violet { background: linear-gradient(145deg,#a78bc9,#74628e,#2b2945); }
+.poster-fruits { background: linear-gradient(145deg,#d28ba5,#9c668f,#372644); }
+.poster-kaguya { background: linear-gradient(145deg,#b94c70,#67456e,#28203e); }
+.poster-bocchi { background: linear-gradient(145deg,#e18caa,#a45b92,#38284e); }
+.poster-apothecary { background: linear-gradient(145deg,#86a36b,#537b6b,#263c3a); }
+
+.genre-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+}
+.genre-list a {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 17px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: .2s;
+}
+.genre-list a:hover {
+  border-color: var(--pink);
+  transform: translateY(-2px);
+}
+.about {
+  background: linear-gradient(120deg,#1c1730,#141021);
+}
+.about p { color: var(--muted); max-width: 600px; }
+
+footer {
+  padding: 28px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  color: #aaa3bd;
+}
+footer p { font-size: 11px; }
+
+@media(max-width:1050px) {
+  .anime-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .poster { height: 225px; }
+}
+@media(max-width:760px) {
+  .site-header { padding: 15px 22px; flex-wrap: wrap; }
+  nav { order: 3; width: 100%; justify-content: space-between; gap: 10px; font-size: 11px; }
+  .hero { min-height: 500px; padding: 75px 25px; }
+  .section { padding: 65px 22px; }
+  .anime-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 17px 12px; }
+  .poster { height: 200px; font-size: 20px; }
+  .genre-list { grid-template-columns: repeat(2,1fr); }
+  footer { flex-wrap: wrap; }
+}
+@media(max-width:480px) {
+  .anime-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .poster { height: 215px; font-size: 22px; }
+  h1 { font-size: 46px; }
+  .genre-list a { padding: 14px 12px; }
+  footer p { width: 100%; }
+}
