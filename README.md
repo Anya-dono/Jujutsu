@@ -1,7 +1,7 @@
 # 🌍 Animlar Dunyosi
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80" alt="Animlar Dunyosi Banner" width="100%" />
+  <img src="file:///C:/Users/tevhi/Downloads/(Alltan)%20KnY%20-%20Thế%20Giới%20Khác%20(Tạm%20Drop).jpe" alt="Animlar Dunyosi Banner" width="100%" />
 </p>
 
 <p align="center">
