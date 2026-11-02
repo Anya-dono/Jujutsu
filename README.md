@@ -1,7 +1,7 @@
 # 🌍 Animlar Dunyosi
 
 <p align="center">
-  <img src="file:///C:/Users/tevhi/Downloads/ᯇ%20Jujutsu%20Kaisen%20𓏲𝄢.jpe" alt="Animlar Dunyosi Banner" width="100%" />
+  <img src="https://i.pinimg.com/736x/f5/72/5f/f5725fd2772aa8ae60405725da9130c5.jpg" alt="Animlar Dunyosi Banner" width="100%" />
 </p>
 
 <p align="center">
