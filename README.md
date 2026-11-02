@@ -1,7 +1,7 @@
 # 🌍 Animlar Dunyosi
 
 <p align="center">
-  <img src="file:///C:/Users/tevhi/Downloads/(Alltan)%20KnY%20-%20Thế%20Giới%20Khác%20(Tạm%20Drop).jpe" alt="Animlar Dunyosi Banner" width="100%" />
+  <img src="file:///C:/Users/tevhi/Downloads/ᯇ%20Jujutsu%20Kaisen%20𓏲𝄢.jpe" alt="Animlar Dunyosi Banner" width="100%" />
 </p>
 
 <p align="center">
